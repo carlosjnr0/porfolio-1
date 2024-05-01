@@ -85,7 +85,7 @@ nav:hover ~ .about-sec .divimg::after{
 }
 
 .about-sec .divimg{
-    background-image: url('/img/painting-mountain-lake-with-mountain-background.jpg');
+    background-image: url('../img/painting-mountain-lake-with-mountain-background.jpg');
     height: 55vh;
     background-position:center;
     background-repeat: no-repeat;
