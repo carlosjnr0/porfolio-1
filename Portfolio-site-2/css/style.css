@@ -536,7 +536,13 @@ nav:hover ~ .about-sec .divimg::after{
 
 
 .contact-sec{
-    padding: 73px 0;
+    padding: 90px 0;
+}
+.contact-sec h2{
+    color: #64FFA5;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 30px;
+    
 }
 .contact-main{
     max-width: 1070px;
@@ -552,23 +558,37 @@ nav:hover ~ .about-sec .divimg::after{
     margin-top: 10px;
     padding: 10px;
 }
+.contact-det p{
+    color: #000000b0;
+    line-height: 30px;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 16px;
+    max-width: 500px;
+    text-align: center;
+}
 .contact-det a{
     position: relative;
     padding: 10px 20px;
     text-decoration: none;
     font-family: 'Share Tech Mono', monospace;
     font-size: 15px;
+    font-weight: 600;
     color: #64FFA5;
-    border: solid 1px #64FFA5;
+    border:#64FFA5  solid 1px !important;
     border-radius: 5px;
+}
+.contact-det a:nth-child(1){
+    margin-right: 10px;
+}
+.contact-det a:nth-child(2){
+    margin-left: 10px;
 }
 .contact-det a:hover{
     font-family: 'Share Tech Mono', monospace;
-    color: #ccc;
+    color: #fff;
 }
 .contact-det a::after{
     content: "";
-    position: absolute;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
     height: 100%;
@@ -588,6 +608,22 @@ nav:hover ~ .about-sec .divimg::after{
     z-index: -1;
 }
 
+
+
+
+.footerr{
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+.footerr p{
+    color: #0000008f;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 16px;
+}
 
 
 
@@ -648,3 +684,45 @@ html {
 
 
 
+
+
+ /*********************resize media query*******************************/
+ @media only screen and (max-width: 763px) {
+    .about-sec .about-content .flex-cols{
+        width: 100%;
+        max-width: 1070px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-family: 'Montserrat',sans-serif;
+        margin: 40px auto;
+
+    }
+    .profile{
+        margin-top: 20px;
+    }
+
+    .exp-main .flex-cols{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .mywork-main .flex-cols{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 98%;
+        margin: 48px auto  0;
+    }
+    #reversed-wrap-flex-col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap:wrap-reverse;
+        width: 98%;
+        margin: 48px auto  0;
+    }
+ }
