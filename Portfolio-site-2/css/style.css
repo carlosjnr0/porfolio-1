@@ -535,8 +535,58 @@ nav:hover ~ .about-sec .divimg::after{
 
 
 
+.contact-sec{
+    padding: 73px 0;
+}
+.contact-main{
+    max-width: 1070px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
 
-
+}
+.contact-det{
+    margin-top: 10px;
+    padding: 10px;
+}
+.contact-det a{
+    position: relative;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 15px;
+    color: #64FFA5;
+    border: solid 1px #64FFA5;
+    border-radius: 5px;
+}
+.contact-det a:hover{
+    font-family: 'Share Tech Mono', monospace;
+    color: #ccc;
+}
+.contact-det a::after{
+    content: "";
+    position: absolute;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    height: 100%;
+    width: 0%;
+    background-color:#64FFA5;
+    z-index: -1;
+    transition: all ease-in-out 0.3s;
+}
+.contact-det a:hover::after{
+    content: "";
+    position: absolute;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    height: 100%;
+    width: 100%;
+    background-color:#64FFA5;
+    z-index: -1;
+}
 
 
 
@@ -594,3 +644,7 @@ html {
     border-radius: 6px;
     border: 3px solid var(--scrollbarBG);
   }
+
+
+
+
