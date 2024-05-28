@@ -14,11 +14,11 @@ document.addEventListener("click", (event) => {
  const delay = ms => new Promise(res => setTimeout(res, ms));
 let bbody=document.getElementById('body');
         async function showpage(){
+            
             bbody.classList.add('show')
             await delay(3000);
             loading.classList.add('lding-hide')
             
+            
         }
 
-
- 
