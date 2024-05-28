@@ -728,8 +728,12 @@ html {
     .navmain .navigation-right ul{
         display: none;
     }
+    .navmain .navigation-right{
+        position: relative;
+    }
     .anim-menu{
         position: sticky;
+        float: right;
         padding: 3px;
         height: 35px;
         width: 40px;
@@ -739,6 +743,12 @@ html {
         align-items: flex-end;
         cursor: pointer;
         z-index: 9999;
+        margin-right: 25px;
+        top:20px;
+        
+    }
+    .anim-menu:hover ~ .media-nav{
+        left: 40%;
         
     }
     .anim-menu :nth-child(1){
@@ -774,12 +784,13 @@ html {
         position: fixed;
         z-index: 999;
         background-color:#5fffdc; 
-        width: 50%;
+        width: 60%;
         height:100vh; 
-        left: 50%;
-        display: flex;
+        left: 100%;
         justify-content: center;
         padding-top: 90px;
+        display: flex;
+        transition: all ease-in-out 0.2s;
     }
     .media-nav ul li{
         text-decoration: none;
