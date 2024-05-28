@@ -13,7 +13,7 @@ body{
     margin: 0;
 }
 nav{
-    background-color: rgba(255, 255, 255, 0.596);
+    background-color: rgba(255, 255, 255, 0.70);
     box-shadow: rgba(0, 0, 0, 0.219) 1px 1px 10px;
     position: fixed;
     z-index: 999;
@@ -627,6 +627,10 @@ nav:hover ~ .about-sec .divimg::after{
 }
 
 
+
+.media-nav{
+    display: none;
+}
 
 
 
