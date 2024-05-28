@@ -725,4 +725,70 @@ html {
         width: 98%;
         margin: 48px auto  0;
     }
+    .navmain .navigation-right ul{
+        display: none;
+    }
+    .anim-menu{
+        position: sticky;
+        padding: 3px;
+        height: 35px;
+        width: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        cursor: pointer;
+        z-index: 9999;
+        
+    }
+    .anim-menu :nth-child(1){
+        height: 2px;
+        width: 100%;
+        background-color: black;
+        transition: all ease-in-out 0.3s;
+    }
+    .anim-menu :nth-child(2){
+        height: 2px;
+        width: 85%;
+        background-color: black;
+        transition: all ease-in-out 0.3s;
+    }
+    .anim-menu :nth-child(3){
+        height: 2px;
+        width: 70%;
+        background-color: black;
+        transition: all ease-in-out 0.3s;
+    }
+    .anim-menu:hover  :nth-child(1){
+        transform: translateY(10px) rotate(405deg);
+    }
+    .anim-menu:hover  :nth-child(3){
+        transform: translateY(-10px) rotate(-45deg);
+        width: 100%;
+    }
+    .anim-menu:hover  :nth-child(2){
+        transform: rotate(45deg);
+        width: 100%;
+    }
+    .media-nav{
+        position: fixed;
+        z-index: 999;
+        background-color:#5fffdc; 
+        width: 50%;
+        height:100vh; 
+        left: 50%;
+        display: flex;
+        justify-content: center;
+        padding-top: 90px;
+    }
+    .media-nav ul li{
+        text-decoration: none;
+        list-style: none;
+        font-size: 14px;
+        color:#000000d3;
+        font-family: 'Share Tech Mono', monospace;
+        font-weight:bolder;
+        transition: all ease-in 0.5s;
+        padding: 20px 0;
+    }
  }
