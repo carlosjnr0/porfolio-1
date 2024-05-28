@@ -784,9 +784,6 @@ html {
     .media-nav{
         position: fixed;
         z-index: 999;
-        background-color:#64FFA5; 
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
         width: 60%;
         height:100vh; 
         left: 100%;
@@ -794,6 +791,12 @@ html {
         padding-top: 90px;
         transition: all ease-in-out 0.2s;
         display: flex;
+        background-color: #64FFA5;
+    }
+    .aactive ~ .media-nav{
+        z-index: 999;
+        box-shadow: 0 4px 40px 100vh rgba(255, 255, 255, 0.781);
+        
     }
     .media-nav ul{
         padding: 0;
