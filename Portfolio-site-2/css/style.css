@@ -110,7 +110,7 @@ nav:hover ~ .about-sec .divimg::after{
 .about-sec .divimg h2{
     color: white;
     font-family: 'Montserrat',sans-serif;
-    font-size: clamp(40px, 8vw, 60px);
+    font-size: clamp(30px, 8vw, 60px);
     font-weight: 600;
     position: relative;
     z-index: 2;
@@ -119,7 +119,7 @@ nav:hover ~ .about-sec .divimg::after{
 .about-sec .divimg h3{
     color: white;
     font-family: 'Montserrat',sans-serif;
-    font-size: clamp(30px, 6vw, 45px);
+    font-size: clamp(25px, 6vw, 45px);
     font-weight: 600;
     position: relative;
     z-index: 2;
