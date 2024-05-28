@@ -11,6 +11,7 @@ body{
     right: 0;
     box-sizing:  border-box;
     margin: 0;
+    transition: all ease-in-out 0.5s;
 }
 nav{
     background-color: rgba(255, 255, 255, 0.70);
@@ -19,6 +20,35 @@ nav{
     z-index: 999;
     backdrop-filter: blur(10px);
     
+}
+@keyframes loading-anim {
+    0% {scale: 0.7; opacity: 0.5;}
+    50% {scale: 1; opacity: 1;}
+    100%{scale: 0.7; opacity: 0.5;}
+  }
+.loading{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999999;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.3s;
+}
+.loading img{
+    width: 150px;
+    filter: brightness(0);
+    animation-name: loading-anim;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    
+}
+.lding-hide{
+    opacity: 0;
+    filter: blur(10px);
+    visibility: hidden;
 }
 .main{
     padding-top: 75px;
