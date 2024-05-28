@@ -24,12 +24,12 @@
             </div>
         </div>
     </nav>
-    <div class="anim-menu">
+    <div class="anim-menu" id="anim" onclick="tg()">
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
-    <div class="media-nav">
+    <div class="media-nav" id="mnav" onabort="lg()">
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -175,12 +175,6 @@
     <div class="footerr">
         <p>&#169 created by Carlos Mensah Nyantakyi</p>
     </div>
-    <script>
-        let bbody=document.getElementById('body');
-        function showpage(){
-            bbody.classList.add('show')
-        }
-        
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>

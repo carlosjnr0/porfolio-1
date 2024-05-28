@@ -747,7 +747,7 @@ html {
         top:20px;
         
     }
-    .anim-menu:hover ~ .media-nav{
+    .aactive ~ .media-nav{
         left: 40%;
         
     }
@@ -769,16 +769,17 @@ html {
         background-color: black;
         transition: all ease-in-out 0.3s;
     }
-    .anim-menu:hover  :nth-child(1){
+    .aactive  :nth-child(1){
         transform: translateY(10px) rotate(405deg);
     }
-    .anim-menu:hover  :nth-child(3){
+    .aactive  :nth-child(3){
         transform: translateY(-10px) rotate(-45deg);
         width: 100%;
     }
-    .anim-menu:hover  :nth-child(2){
+    .aactive  :nth-child(2){
         transform: rotate(45deg);
         width: 100%;
+        opacity: 0;
     }
     .media-nav{
         position: fixed;
