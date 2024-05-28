@@ -315,7 +315,6 @@ nav:hover ~ .about-sec .divimg::after{
     background-color: lightgrey;
     max-width: 300px;
     width: 100%;
-    margin-left: 40px;
     border-radius: 20px;
     position: relative;
     overflow: hidden;
@@ -855,4 +854,14 @@ html {
         font-weight:bolder;
         transition: all ease-in 0.5s;
     }
+ }
+ @media only screen and (max-width: 517px){
+    .polls{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
  }
