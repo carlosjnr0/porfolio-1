@@ -793,8 +793,8 @@ html {
         left: 101%;
         justify-content: center;
         padding-top: 90px;
-        display: flex;
         transition: all ease-in-out 0.2s;
+        display: flex;
     }
     .media-nav ul li{
         text-decoration: none;
