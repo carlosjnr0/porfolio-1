@@ -110,7 +110,7 @@ nav:hover ~ .about-sec .divimg::after{
 .about-sec .divimg h2{
     color: white;
     font-family: 'Montserrat',sans-serif;
-    font-size: clamp(30px, 8vw, 60px);
+    font-size: clamp(35px, 8vw, 60px);
     font-weight: 600;
     position: relative;
     z-index: 2;
@@ -119,7 +119,7 @@ nav:hover ~ .about-sec .divimg::after{
 .about-sec .divimg h3{
     color: white;
     font-family: 'Montserrat',sans-serif;
-    font-size: clamp(25px, 6vw, 45px);
+    font-size: clamp(28px, 6vw, 45px);
     font-weight: 600;
     position: relative;
     z-index: 2;
@@ -784,16 +784,19 @@ html {
     .media-nav{
         position: fixed;
         z-index: 999;
-        background-color:#5fffdc; 
+        background-color:#64FFA5; 
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
         width: 60%;
         height:100vh; 
-        left: 101%;
+        left: 100%;
         justify-content: center;
         padding-top: 90px;
         transition: all ease-in-out 0.2s;
         display: flex;
+    }
+    .media-nav ul{
+        padding: 0;
     }
     .media-nav ul li{
         text-decoration: none;
@@ -813,6 +816,5 @@ html {
         font-family: 'Share Tech Mono', monospace;
         font-weight:bolder;
         transition: all ease-in 0.5s;
-        padding: 20px 0;
     }
  }
